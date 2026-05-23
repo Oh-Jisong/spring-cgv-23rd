@@ -78,7 +78,7 @@ public class AuthService {
         }
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public LoginResponse login(LoginRequest request) {
         long startTime = System.currentTimeMillis();
 
